@@ -1,0 +1,3 @@
+[submodule "ThirdParty/spektrafilm"]
+	path = ThirdParty/spektrafilm
+	url = https://github.com/andreavolpato/spektrafilm

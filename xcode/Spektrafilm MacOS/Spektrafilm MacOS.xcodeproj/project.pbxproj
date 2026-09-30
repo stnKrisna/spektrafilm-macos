@@ -1,0 +1,1340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81235BC63059176D006CE5BD /* PreviewGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81235BC53059176D006CE5BD /* PreviewGeometry.swift */; };
+		81235BDE30594259006CE5BD /* ExportSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81235BDD30594259006CE5BD /* ExportSettings.swift */; };
+		813FE5C830553CA500BBFECC /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5BF30553CA500BBFECC /* Parameters.swift */; };
+		813FE5C930553CA500BBFECC /* Convolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5B630553CA500BBFECC /* Convolution.swift */; };
+		813FE5CA30553CA500BBFECC /* Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5BC30553CA500BBFECC /* Interpolation.swift */; };
+		813FE5CB30553CA500BBFECC /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5BD30553CA500BBFECC /* Logging.swift */; };
+		813FE5CC30553CA500BBFECC /* DataPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5B730553CA500BBFECC /* DataPack.swift */; };
+		813FE5CD30553CA500BBFECC /* Spectral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5C630553CA500BBFECC /* Spectral.swift */; };
+		813FE5CE30553CA500BBFECC /* MetalAccelerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5BE30553CA500BBFECC /* MetalAccelerator.swift */; };
+		813FE5D030553CA500BBFECC /* Resample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5C530553CA500BBFECC /* Resample.swift */; };
+		813FE5D130553CA500BBFECC /* ImageBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5BB30553CA500BBFECC /* ImageBuffer.swift */; };
+		813FE5D230553CA500BBFECC /* PCHIP3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5C030553CA500BBFECC /* PCHIP3D.swift */; };
+		813FE5D330553CA500BBFECC /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5C130553CA500BBFECC /* Pipeline.swift */; };
+		813FE5D430553CA500BBFECC /* DiffusionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5B830553CA500BBFECC /* DiffusionFilter.swift */; };
+		813FE5D530553CA500BBFECC /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5C430553CA500BBFECC /* Random.swift */; };
+		813FE5D630553CA500BBFECC /* FilmModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5B930553CA500BBFECC /* FilmModels.swift */; };
+		813FE5D730553CA500BBFECC /* GamutCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5BA30553CA500BBFECC /* GamutCompression.swift */; };
+		813FE5D830553CA500BBFECC /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE5C330553CA500BBFECC /* Profile.swift */; };
+		813FE60F30553CFB00BBFECC /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE60830553CFB00BBFECC /* AppViewModel.swift */; };
+		813FE61030553CFB00BBFECC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE60A30553CFB00BBFECC /* ContentView.swift */; };
+		813FE61130553CFB00BBFECC /* SpektrafilmSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE60C30553CFB00BBFECC /* SpektrafilmSwiftUIApp.swift */; };
+		813FE61230553CFB00BBFECC /* ZoomablePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE60D30553CFB00BBFECC /* ZoomablePreviewView.swift */; };
+		813FE61430553CFB00BBFECC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813FE60B30553CFB00BBFECC /* SettingsView.swift */; };
+		813FE61530553CFB00BBFECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813FE60930553CFB00BBFECC /* Assets.xcassets */; };
+		81ECF555305BFE6F009A13EF /* RAWAdjustments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF554305BFE6F009A13EF /* RAWAdjustments.swift */; };
+		81ECF556305BFE6F009A13EF /* ImageCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF553305BFE6F009A13EF /* ImageCodec.swift */; };
+		81ECF55A305BFE9F009A13EF /* MetalAccelerator+Resident.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF558305BFE9F009A13EF /* MetalAccelerator+Resident.swift */; };
+		81ECF55B305BFE9F009A13EF /* MetalAccelerator+ImageOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF557305BFE9F009A13EF /* MetalAccelerator+ImageOps.swift */; };
+		81ECF569305BFF75009A13EF /* Inspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF564305BFF75009A13EF /* Inspector.swift */; };
+		81ECF56A305BFF75009A13EF /* AppViewModel+Rendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF561305BFF75009A13EF /* AppViewModel+Rendering.swift */; };
+		81ECF56B305BFF75009A13EF /* FilmFormatControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF563305BFF75009A13EF /* FilmFormatControl.swift */; };
+		81ECF56D305BFF75009A13EF /* Inspector+ControlGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF565305BFF75009A13EF /* Inspector+ControlGroups.swift */; };
+		81ECF56F305BFF75009A13EF /* InspectorComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF566305BFF75009A13EF /* InspectorComponents.swift */; };
+		81ECF571305BFF75009A13EF /* ProfileThumbnailSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF568305BFF75009A13EF /* ProfileThumbnailSelector.swift */; };
+		81ECF572305BFF75009A13EF /* PreviewPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF567305BFF75009A13EF /* PreviewPane.swift */; };
+		81ECF577305C0C40009A13EF /* SpektrafilmKernels.metal in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF575305C0C40009A13EF /* SpektrafilmKernels.metal */; };
+		81ECF57A305D0A11009A13EF /* UITestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ECF579305D0A11009A13EF /* UITestSupport.swift */; };
+		AA11BB22CC33DD44EE55F602 /* Services/ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F601 /* Services/ProfileService.swift */; };
+		AA11BB22CC33DD44EE55F604 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F603 /* ServiceProvider.swift */; };
+		AA11BB22CC33DD44EE55F606 /* Services/ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F605 /* Services/ImageService.swift */; };
+		AA11BB22CC33DD44EE55F608 /* Services/RenderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F607 /* Services/RenderService.swift */; };
+		AA11BB22CC33DD44EE55F60A /* Services/ProfilePreviewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F609 /* Services/ProfilePreviewsService.swift */; };
+		AA11BB22CC33DD44EE55F60C /* Services/ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F60B /* Services/ExportService.swift */; };
+		AA11BB22CC33DD44EE55F60E /* Services/ViewportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F60D /* Services/ViewportService.swift */; };
+		B28F2B3C4D5E6F708192A3B4 /* AdjustmentInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F1A2B3C4D5E6F708192A3 /* AdjustmentInterface.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		813FE49C3055393E00BBFECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 813FE4843055393D00BBFECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 813FE48B3055393D00BBFECC;
+			remoteInfo = "Spektrafilm MacOS";
+		};
+		813FE4A63055393E00BBFECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 813FE4843055393D00BBFECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 813FE48B3055393D00BBFECC;
+			remoteInfo = "Spektrafilm MacOS";
+		};
+		813FE5EC30553CC300BBFECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 813FE4843055393D00BBFECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 813FE5DC30553CC300BBFECC;
+			remoteInfo = SpektrafilmApp;
+		};
+		813FE5F630553CC300BBFECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 813FE4843055393D00BBFECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 813FE5DC30553CC300BBFECC;
+			remoteInfo = SpektrafilmApp;
+		};
+		813FE616305571D800BBFECC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 813FE4843055393D00BBFECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 813FE5AC30553C8900BBFECC;
+			remoteInfo = SpektrafilmCore;
+		};
+		8147692F3058E141007FE70D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 813FE4843055393D00BBFECC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814769243058E0F4007FE70D;
+			remoteInfo = SpektrafilmPreviewGeometry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		81235BC53059176D006CE5BD /* PreviewGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewGeometry.swift; sourceTree = "<group>"; };
+		81235BDD30594259006CE5BD /* ExportSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSettings.swift; sourceTree = "<group>"; };
+		813FE48C3055393D00BBFECC /* Spektrafilm MacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spektrafilm MacOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		813FE49B3055393E00BBFECC /* Spektrafilm MacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spektrafilm MacOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		813FE4A53055393E00BBFECC /* Spektrafilm MacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spektrafilm MacOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		813FE5AD30553C8900BBFECC /* libSpektrafilmCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSpektrafilmCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		813FE5B630553CA500BBFECC /* Convolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convolution.swift; sourceTree = "<group>"; };
+		813FE5B730553CA500BBFECC /* DataPack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPack.swift; sourceTree = "<group>"; };
+		813FE5B830553CA500BBFECC /* DiffusionFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffusionFilter.swift; sourceTree = "<group>"; };
+		813FE5B930553CA500BBFECC /* FilmModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModels.swift; sourceTree = "<group>"; };
+		813FE5BA30553CA500BBFECC /* GamutCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamutCompression.swift; sourceTree = "<group>"; };
+		813FE5BB30553CA500BBFECC /* ImageBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBuffer.swift; sourceTree = "<group>"; };
+		813FE5BC30553CA500BBFECC /* Interpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpolation.swift; sourceTree = "<group>"; };
+		813FE5BD30553CA500BBFECC /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		813FE5BE30553CA500BBFECC /* MetalAccelerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalAccelerator.swift; sourceTree = "<group>"; };
+		813FE5BF30553CA500BBFECC /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		813FE5C030553CA500BBFECC /* PCHIP3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCHIP3D.swift; sourceTree = "<group>"; };
+		813FE5C130553CA500BBFECC /* Pipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
+		813FE5C330553CA500BBFECC /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		813FE5C430553CA500BBFECC /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		813FE5C530553CA500BBFECC /* Resample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resample.swift; sourceTree = "<group>"; };
+		813FE5C630553CA500BBFECC /* Spectral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spectral.swift; sourceTree = "<group>"; };
+		813FE5DD30553CC300BBFECC /* SpektrafilmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpektrafilmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		813FE5EB30553CC300BBFECC /* SpektrafilmAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpektrafilmAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		813FE5F530553CC300BBFECC /* SpektrafilmAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpektrafilmAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		813FE60830553CFB00BBFECC /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		813FE60930553CFB00BBFECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		813FE60A30553CFB00BBFECC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		813FE60B30553CFB00BBFECC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		813FE60C30553CFB00BBFECC /* SpektrafilmSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpektrafilmSwiftUIApp.swift; sourceTree = "<group>"; };
+		813FE60D30553CFB00BBFECC /* ZoomablePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomablePreviewView.swift; sourceTree = "<group>"; };
+		814769253058E0F4007FE70D /* libSpektrafilmPreviewGeometry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSpektrafilmPreviewGeometry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		81ECF553305BFE6F009A13EF /* ImageCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCodec.swift; sourceTree = "<group>"; };
+		81ECF554305BFE6F009A13EF /* RAWAdjustments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAWAdjustments.swift; sourceTree = "<group>"; };
+		81ECF557305BFE9F009A13EF /* MetalAccelerator+ImageOps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetalAccelerator+ImageOps.swift"; sourceTree = "<group>"; };
+		81ECF558305BFE9F009A13EF /* MetalAccelerator+Resident.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetalAccelerator+Resident.swift"; sourceTree = "<group>"; };
+		81ECF561305BFF75009A13EF /* AppViewModel+Rendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppViewModel+Rendering.swift"; sourceTree = "<group>"; };
+		81ECF563305BFF75009A13EF /* FilmFormatControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFormatControl.swift; sourceTree = "<group>"; };
+		81ECF564305BFF75009A13EF /* Inspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspector.swift; sourceTree = "<group>"; };
+		81ECF565305BFF75009A13EF /* Inspector+ControlGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inspector+ControlGroups.swift"; sourceTree = "<group>"; };
+		81ECF566305BFF75009A13EF /* InspectorComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorComponents.swift; sourceTree = "<group>"; };
+		81ECF567305BFF75009A13EF /* PreviewPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPane.swift; sourceTree = "<group>"; };
+		81ECF568305BFF75009A13EF /* ProfileThumbnailSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThumbnailSelector.swift; sourceTree = "<group>"; };
+		81ECF575305C0C40009A13EF /* SpektrafilmKernels.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SpektrafilmKernels.metal; sourceTree = "<group>"; };
+		81ECF579305D0A11009A13EF /* UITestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSupport.swift; sourceTree = "<group>"; };
+		A17F1A2B3C4D5E6F708192A3 /* AdjustmentInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustmentInterface.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55F601 /* Services/ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/ProfileService.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55F603 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55F605 /* Services/ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/ImageService.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55F607 /* Services/RenderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/RenderService.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55F609 /* Services/ProfilePreviewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/ProfilePreviewsService.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55F60B /* Services/ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/ExportService.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55F60D /* Services/ViewportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/ViewportService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		813FE48E3055393D00BBFECC /* Spektrafilm MacOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Spektrafilm MacOS";
+			sourceTree = "<group>";
+		};
+		813FE49E3055393E00BBFECC /* Spektrafilm MacOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Spektrafilm MacOSTests";
+			sourceTree = "<group>";
+		};
+		813FE4A83055393E00BBFECC /* Spektrafilm MacOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Spektrafilm MacOSUITests";
+			sourceTree = "<group>";
+		};
+		813FE5EE30553CC300BBFECC /* SpektrafilmAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpektrafilmAppTests;
+			sourceTree = "<group>";
+		};
+		813FE5F830553CC300BBFECC /* SpektrafilmAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SpektrafilmAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		813FE4893055393D00BBFECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE4983055393E00BBFECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE4A23055393E00BBFECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE5AB30553C8900BBFECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE5DA30553CC300BBFECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE5E830553CC300BBFECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE5F230553CC300BBFECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814769233058E0F4007FE70D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		813FE4833055393D00BBFECC = {
+			isa = PBXGroup;
+			children = (
+				8147692E3058E121007FE70D /* SpektrafilmPreviewGeometry */,
+				813FE60E30553CFB00BBFECC /* SpektrafilmApp */,
+				813FE5C730553CA500BBFECC /* SpektrafilmCore */,
+				813FE48E3055393D00BBFECC /* Spektrafilm MacOS */,
+				813FE49E3055393E00BBFECC /* Spektrafilm MacOSTests */,
+				813FE4A83055393E00BBFECC /* Spektrafilm MacOSUITests */,
+				813FE5EE30553CC300BBFECC /* SpektrafilmAppTests */,
+				813FE5F830553CC300BBFECC /* SpektrafilmAppUITests */,
+				813FE48D3055393D00BBFECC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		813FE48D3055393D00BBFECC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				813FE48C3055393D00BBFECC /* Spektrafilm MacOS.app */,
+				813FE49B3055393E00BBFECC /* Spektrafilm MacOSTests.xctest */,
+				813FE4A53055393E00BBFECC /* Spektrafilm MacOSUITests.xctest */,
+				813FE5AD30553C8900BBFECC /* libSpektrafilmCore.a */,
+				813FE5DD30553CC300BBFECC /* SpektrafilmApp.app */,
+				813FE5EB30553CC300BBFECC /* SpektrafilmAppTests.xctest */,
+				813FE5F530553CC300BBFECC /* SpektrafilmAppUITests.xctest */,
+				814769253058E0F4007FE70D /* libSpektrafilmPreviewGeometry.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		813FE5C730553CA500BBFECC /* SpektrafilmCore */ = {
+			isa = PBXGroup;
+			children = (
+				81ECF575305C0C40009A13EF /* SpektrafilmKernels.metal */,
+				81ECF557305BFE9F009A13EF /* MetalAccelerator+ImageOps.swift */,
+				81ECF558305BFE9F009A13EF /* MetalAccelerator+Resident.swift */,
+				813FE5B630553CA500BBFECC /* Convolution.swift */,
+				813FE5B730553CA500BBFECC /* DataPack.swift */,
+				813FE5B830553CA500BBFECC /* DiffusionFilter.swift */,
+				813FE5B930553CA500BBFECC /* FilmModels.swift */,
+				813FE5BA30553CA500BBFECC /* GamutCompression.swift */,
+				813FE5BB30553CA500BBFECC /* ImageBuffer.swift */,
+				813FE5BC30553CA500BBFECC /* Interpolation.swift */,
+				813FE5BD30553CA500BBFECC /* Logging.swift */,
+				813FE5BE30553CA500BBFECC /* MetalAccelerator.swift */,
+				813FE5BF30553CA500BBFECC /* Parameters.swift */,
+				813FE5C030553CA500BBFECC /* PCHIP3D.swift */,
+				813FE5C130553CA500BBFECC /* Pipeline.swift */,
+				813FE5C330553CA500BBFECC /* Profile.swift */,
+				813FE5C430553CA500BBFECC /* Random.swift */,
+				813FE5C530553CA500BBFECC /* Resample.swift */,
+				813FE5C630553CA500BBFECC /* Spectral.swift */,
+			);
+			name = SpektrafilmCore;
+			path = ../../Sources/SpektrafilmCore;
+			sourceTree = SOURCE_ROOT;
+		};
+		813FE60E30553CFB00BBFECC /* SpektrafilmApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA11BB22CC33DD44EE55F60B /* Services/ExportService.swift */,
+				AA11BB22CC33DD44EE55F605 /* Services/ImageService.swift */,
+				AA11BB22CC33DD44EE55F609 /* Services/ProfilePreviewsService.swift */,
+				AA11BB22CC33DD44EE55F601 /* Services/ProfileService.swift */,
+				AA11BB22CC33DD44EE55F607 /* Services/RenderService.swift */,
+				AA11BB22CC33DD44EE55F603 /* ServiceProvider.swift */,
+				81ECF561305BFF75009A13EF /* AppViewModel+Rendering.swift */,
+				AA11BB22CC33DD44EE55F60D /* Services/ViewportService.swift */,
+				81ECF563305BFF75009A13EF /* FilmFormatControl.swift */,
+				81ECF564305BFF75009A13EF /* Inspector.swift */,
+				81ECF565305BFF75009A13EF /* Inspector+ControlGroups.swift */,
+				81ECF566305BFF75009A13EF /* InspectorComponents.swift */,
+				81ECF567305BFF75009A13EF /* PreviewPane.swift */,
+				81ECF568305BFF75009A13EF /* ProfileThumbnailSelector.swift */,
+				81ECF579305D0A11009A13EF /* UITestSupport.swift */,
+				81ECF553305BFE6F009A13EF /* ImageCodec.swift */,
+				81ECF554305BFE6F009A13EF /* RAWAdjustments.swift */,
+				81235BDD30594259006CE5BD /* ExportSettings.swift */,
+				A17F1A2B3C4D5E6F708192A3 /* AdjustmentInterface.swift */,
+				813FE60830553CFB00BBFECC /* AppViewModel.swift */,
+				813FE60930553CFB00BBFECC /* Assets.xcassets */,
+				813FE60A30553CFB00BBFECC /* ContentView.swift */,
+				813FE60B30553CFB00BBFECC /* SettingsView.swift */,
+				813FE60C30553CFB00BBFECC /* SpektrafilmSwiftUIApp.swift */,
+				813FE60D30553CFB00BBFECC /* ZoomablePreviewView.swift */,
+			);
+			name = SpektrafilmApp;
+			path = ../../Sources/SpektrafilmApp;
+			sourceTree = SOURCE_ROOT;
+		};
+		8147692E3058E121007FE70D /* SpektrafilmPreviewGeometry */ = {
+			isa = PBXGroup;
+			children = (
+				81235BC53059176D006CE5BD /* PreviewGeometry.swift */,
+			);
+			name = SpektrafilmPreviewGeometry;
+			path = ../../Sources/SpektrafilmPreviewGeometry;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		813FE5A930553C8900BBFECC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814769213058E0F4007FE70D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		813FE48B3055393D00BBFECC /* Spektrafilm MacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813FE4AF3055393E00BBFECC /* Build configuration list for PBXNativeTarget "Spektrafilm MacOS" */;
+			buildPhases = (
+				813FE4883055393D00BBFECC /* Sources */,
+				813FE4893055393D00BBFECC /* Frameworks */,
+				813FE48A3055393D00BBFECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				813FE48E3055393D00BBFECC /* Spektrafilm MacOS */,
+			);
+			name = "Spektrafilm MacOS";
+			packageProductDependencies = (
+			);
+			productName = "Spektrafilm MacOS";
+			productReference = 813FE48C3055393D00BBFECC /* Spektrafilm MacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		813FE49A3055393E00BBFECC /* Spektrafilm MacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813FE4B23055393E00BBFECC /* Build configuration list for PBXNativeTarget "Spektrafilm MacOSTests" */;
+			buildPhases = (
+				813FE4973055393E00BBFECC /* Sources */,
+				813FE4983055393E00BBFECC /* Frameworks */,
+				813FE4993055393E00BBFECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				813FE49D3055393E00BBFECC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				813FE49E3055393E00BBFECC /* Spektrafilm MacOSTests */,
+			);
+			name = "Spektrafilm MacOSTests";
+			packageProductDependencies = (
+			);
+			productName = "Spektrafilm MacOSTests";
+			productReference = 813FE49B3055393E00BBFECC /* Spektrafilm MacOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		813FE4A43055393E00BBFECC /* Spektrafilm MacOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813FE4B53055393E00BBFECC /* Build configuration list for PBXNativeTarget "Spektrafilm MacOSUITests" */;
+			buildPhases = (
+				813FE4A13055393E00BBFECC /* Sources */,
+				813FE4A23055393E00BBFECC /* Frameworks */,
+				813FE4A33055393E00BBFECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				813FE4A73055393E00BBFECC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				813FE4A83055393E00BBFECC /* Spektrafilm MacOSUITests */,
+			);
+			name = "Spektrafilm MacOSUITests";
+			packageProductDependencies = (
+			);
+			productName = "Spektrafilm MacOSUITests";
+			productReference = 813FE4A53055393E00BBFECC /* Spektrafilm MacOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		813FE5AC30553C8900BBFECC /* SpektrafilmCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813FE5B330553C8900BBFECC /* Build configuration list for PBXNativeTarget "SpektrafilmCore" */;
+			buildPhases = (
+				813FE5A930553C8900BBFECC /* Headers */,
+				813FE5AA30553C8900BBFECC /* Sources */,
+				813FE5AB30553C8900BBFECC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpektrafilmCore;
+			packageProductDependencies = (
+			);
+			productName = SpektrafilmCore;
+			productReference = 813FE5AD30553C8900BBFECC /* libSpektrafilmCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		813FE5DC30553CC300BBFECC /* SpektrafilmApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813FE5FD30553CC300BBFECC /* Build configuration list for PBXNativeTarget "SpektrafilmApp" */;
+			buildPhases = (
+				813FE5D930553CC300BBFECC /* Sources */,
+				813FE5DA30553CC300BBFECC /* Frameworks */,
+				813FE5DB30553CC300BBFECC /* Resources */,
+				813FE61D30553CFB00BBFECC /* Bundle Data */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				813FE617305571D800BBFECC /* PBXTargetDependency */,
+				814769303058E141007FE70D /* PBXTargetDependency */,
+			);
+			name = SpektrafilmApp;
+			packageProductDependencies = (
+			);
+			productName = SpektrafilmApp;
+			productReference = 813FE5DD30553CC300BBFECC /* SpektrafilmApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		813FE5EA30553CC300BBFECC /* SpektrafilmAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813FE60030553CC300BBFECC /* Build configuration list for PBXNativeTarget "SpektrafilmAppTests" */;
+			buildPhases = (
+				813FE5E730553CC300BBFECC /* Sources */,
+				813FE5E830553CC300BBFECC /* Frameworks */,
+				813FE5E930553CC300BBFECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				813FE5ED30553CC300BBFECC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				813FE5EE30553CC300BBFECC /* SpektrafilmAppTests */,
+			);
+			name = SpektrafilmAppTests;
+			packageProductDependencies = (
+			);
+			productName = SpektrafilmAppTests;
+			productReference = 813FE5EB30553CC300BBFECC /* SpektrafilmAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		813FE5F430553CC300BBFECC /* SpektrafilmAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813FE60330553CC300BBFECC /* Build configuration list for PBXNativeTarget "SpektrafilmAppUITests" */;
+			buildPhases = (
+				813FE5F130553CC300BBFECC /* Sources */,
+				813FE5F230553CC300BBFECC /* Frameworks */,
+				813FE5F330553CC300BBFECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				813FE5F730553CC300BBFECC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				813FE5F830553CC300BBFECC /* SpektrafilmAppUITests */,
+			);
+			name = SpektrafilmAppUITests;
+			packageProductDependencies = (
+			);
+			productName = SpektrafilmAppUITests;
+			productReference = 813FE5F530553CC300BBFECC /* SpektrafilmAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		814769243058E0F4007FE70D /* SpektrafilmPreviewGeometry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8147692B3058E0F4007FE70D /* Build configuration list for PBXNativeTarget "SpektrafilmPreviewGeometry" */;
+			buildPhases = (
+				814769213058E0F4007FE70D /* Headers */,
+				814769223058E0F4007FE70D /* Sources */,
+				814769233058E0F4007FE70D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpektrafilmPreviewGeometry;
+			packageProductDependencies = (
+			);
+			productName = SpektrafilmPreviewGeometry;
+			productReference = 814769253058E0F4007FE70D /* libSpektrafilmPreviewGeometry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		813FE4843055393D00BBFECC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					813FE48B3055393D00BBFECC = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					813FE49A3055393E00BBFECC = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 813FE48B3055393D00BBFECC;
+					};
+					813FE4A43055393E00BBFECC = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 813FE48B3055393D00BBFECC;
+					};
+					813FE5AC30553C8900BBFECC = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					813FE5DC30553CC300BBFECC = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					813FE5EA30553CC300BBFECC = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 813FE5DC30553CC300BBFECC;
+					};
+					813FE5F430553CC300BBFECC = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 813FE5DC30553CC300BBFECC;
+					};
+					814769243058E0F4007FE70D = {
+						CreatedOnToolsVersion = 26.6;
+						LastSwiftMigration = 2660;
+					};
+				};
+			};
+			buildConfigurationList = 813FE4873055393D00BBFECC /* Build configuration list for PBXProject "Spektrafilm MacOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 813FE4833055393D00BBFECC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 813FE48D3055393D00BBFECC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				813FE48B3055393D00BBFECC /* Spektrafilm MacOS */,
+				813FE49A3055393E00BBFECC /* Spektrafilm MacOSTests */,
+				813FE4A43055393E00BBFECC /* Spektrafilm MacOSUITests */,
+				813FE5AC30553C8900BBFECC /* SpektrafilmCore */,
+				814769243058E0F4007FE70D /* SpektrafilmPreviewGeometry */,
+				813FE5DC30553CC300BBFECC /* SpektrafilmApp */,
+				813FE5EA30553CC300BBFECC /* SpektrafilmAppTests */,
+				813FE5F430553CC300BBFECC /* SpektrafilmAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		813FE48A3055393D00BBFECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE4993055393E00BBFECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE4A33055393E00BBFECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE5DB30553CC300BBFECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813FE61530553CFB00BBFECC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE5E930553CC300BBFECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE5F330553CC300BBFECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		813FE61D30553CFB00BBFECC /* Bundle Data */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle Data";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "DATA_SRC=\"${SRCROOT}/../../Data\"; DEST=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/Contents/Resources\"; if [ -d \"$DATA_SRC\" ]; then mkdir -p \"$DEST\"; rm -rf \"$DEST/Data\"; cp -R \"$DATA_SRC\" \"$DEST/Data\"; fi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		813FE4883055393D00BBFECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE4973055393E00BBFECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE4A13055393E00BBFECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE5AA30553C8900BBFECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81ECF55A305BFE9F009A13EF /* MetalAccelerator+Resident.swift in Sources */,
+				81ECF55B305BFE9F009A13EF /* MetalAccelerator+ImageOps.swift in Sources */,
+				813FE5C830553CA500BBFECC /* Parameters.swift in Sources */,
+				813FE5C930553CA500BBFECC /* Convolution.swift in Sources */,
+				813FE5CA30553CA500BBFECC /* Interpolation.swift in Sources */,
+				813FE5CB30553CA500BBFECC /* Logging.swift in Sources */,
+				813FE5CC30553CA500BBFECC /* DataPack.swift in Sources */,
+				813FE5CD30553CA500BBFECC /* Spectral.swift in Sources */,
+				813FE5CE30553CA500BBFECC /* MetalAccelerator.swift in Sources */,
+				813FE5D030553CA500BBFECC /* Resample.swift in Sources */,
+				813FE5D130553CA500BBFECC /* ImageBuffer.swift in Sources */,
+				813FE5D230553CA500BBFECC /* PCHIP3D.swift in Sources */,
+				813FE5D330553CA500BBFECC /* Pipeline.swift in Sources */,
+				813FE5D430553CA500BBFECC /* DiffusionFilter.swift in Sources */,
+				813FE5D530553CA500BBFECC /* Random.swift in Sources */,
+				813FE5D630553CA500BBFECC /* FilmModels.swift in Sources */,
+				813FE5D730553CA500BBFECC /* GamutCompression.swift in Sources */,
+				813FE5D830553CA500BBFECC /* Profile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE5D930553CC300BBFECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28F2B3C4D5E6F708192A3B4 /* AdjustmentInterface.swift in Sources */,
+				813FE60F30553CFB00BBFECC /* AppViewModel.swift in Sources */,
+				81235BDE30594259006CE5BD /* ExportSettings.swift in Sources */,
+				81ECF555305BFE6F009A13EF /* RAWAdjustments.swift in Sources */,
+				81ECF556305BFE6F009A13EF /* ImageCodec.swift in Sources */,
+				81ECF569305BFF75009A13EF /* Inspector.swift in Sources */,
+				81ECF56A305BFF75009A13EF /* AppViewModel+Rendering.swift in Sources */,
+				81ECF56B305BFF75009A13EF /* FilmFormatControl.swift in Sources */,
+				AA11BB22CC33DD44EE55F60C /* Services/ExportService.swift in Sources */,
+				81ECF56D305BFF75009A13EF /* Inspector+ControlGroups.swift in Sources */,
+				AA11BB22CC33DD44EE55F606 /* Services/ImageService.swift in Sources */,
+				81ECF56F305BFF75009A13EF /* InspectorComponents.swift in Sources */,
+				AA11BB22CC33DD44EE55F602 /* Services/ProfileService.swift in Sources */,
+				AA11BB22CC33DD44EE55F608 /* Services/RenderService.swift in Sources */,
+				AA11BB22CC33DD44EE55F604 /* ServiceProvider.swift in Sources */,
+				81ECF571305BFF75009A13EF /* ProfileThumbnailSelector.swift in Sources */,
+				81ECF572305BFF75009A13EF /* PreviewPane.swift in Sources */,
+				81ECF57A305D0A11009A13EF /* UITestSupport.swift in Sources */,
+				AA11BB22CC33DD44EE55F60A /* Services/ProfilePreviewsService.swift in Sources */,
+				AA11BB22CC33DD44EE55F60E /* Services/ViewportService.swift in Sources */,
+				813FE61030553CFB00BBFECC /* ContentView.swift in Sources */,
+				813FE61130553CFB00BBFECC /* SpektrafilmSwiftUIApp.swift in Sources */,
+				813FE61230553CFB00BBFECC /* ZoomablePreviewView.swift in Sources */,
+				81ECF577305C0C40009A13EF /* SpektrafilmKernels.metal in Sources */,
+				813FE61430553CFB00BBFECC /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE5E730553CC300BBFECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813FE5F130553CC300BBFECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814769223058E0F4007FE70D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81235BC63059176D006CE5BD /* PreviewGeometry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		813FE49D3055393E00BBFECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 813FE48B3055393D00BBFECC /* Spektrafilm MacOS */;
+			targetProxy = 813FE49C3055393E00BBFECC /* PBXContainerItemProxy */;
+		};
+		813FE4A73055393E00BBFECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 813FE48B3055393D00BBFECC /* Spektrafilm MacOS */;
+			targetProxy = 813FE4A63055393E00BBFECC /* PBXContainerItemProxy */;
+		};
+		813FE5ED30553CC300BBFECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 813FE5DC30553CC300BBFECC /* SpektrafilmApp */;
+			targetProxy = 813FE5EC30553CC300BBFECC /* PBXContainerItemProxy */;
+		};
+		813FE5F730553CC300BBFECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 813FE5DC30553CC300BBFECC /* SpektrafilmApp */;
+			targetProxy = 813FE5F630553CC300BBFECC /* PBXContainerItemProxy */;
+		};
+		813FE617305571D800BBFECC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 813FE5AC30553C8900BBFECC /* SpektrafilmCore */;
+			targetProxy = 813FE616305571D800BBFECC /* PBXContainerItemProxy */;
+		};
+		814769303058E141007FE70D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814769243058E0F4007FE70D /* SpektrafilmPreviewGeometry */;
+			targetProxy = 8147692F3058E141007FE70D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		813FE4AD3055393E00BBFECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		813FE4AE3055393E00BBFECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		813FE4B03055393E00BBFECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.Spektrafilm-MacOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		813FE4B13055393E00BBFECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.Spektrafilm-MacOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		813FE4B33055393E00BBFECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.Spektrafilm-MacOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spektrafilm MacOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Spektrafilm MacOS";
+			};
+			name = Debug;
+		};
+		813FE4B43055393E00BBFECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.Spektrafilm-MacOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spektrafilm MacOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Spektrafilm MacOS";
+			};
+			name = Release;
+		};
+		813FE4B63055393E00BBFECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.Spektrafilm-MacOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Spektrafilm MacOS";
+			};
+			name = Debug;
+		};
+		813FE4B73055393E00BBFECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.Spektrafilm-MacOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Spektrafilm MacOS";
+			};
+			name = Release;
+		};
+		813FE5B430553C8900BBFECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		813FE5B530553C8900BBFECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		813FE5FE30553CC300BBFECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-lSpektrafilmCore",
+					"-lSpektrafilmPreviewGeometry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.SpektrafilmApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		813FE5FF30553CC300BBFECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-lSpektrafilmCore",
+					"-lSpektrafilmPreviewGeometry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.SpektrafilmApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		813FE60130553CC300BBFECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.SpektrafilmAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpektrafilmApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpektrafilmApp";
+			};
+			name = Debug;
+		};
+		813FE60230553CC300BBFECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.SpektrafilmAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpektrafilmApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpektrafilmApp";
+			};
+			name = Release;
+		};
+		813FE60430553CC300BBFECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.SpektrafilmAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SpektrafilmApp;
+			};
+			name = Debug;
+		};
+		813FE60530553CC300BBFECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no-company.SpektrafilmAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SpektrafilmApp;
+			};
+			name = Release;
+		};
+		8147692C3058E0F4007FE70D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		8147692D3058E0F4007FE70D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		813FE4873055393D00BBFECC /* Build configuration list for PBXProject "Spektrafilm MacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813FE4AD3055393E00BBFECC /* Debug */,
+				813FE4AE3055393E00BBFECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813FE4AF3055393E00BBFECC /* Build configuration list for PBXNativeTarget "Spektrafilm MacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813FE4B03055393E00BBFECC /* Debug */,
+				813FE4B13055393E00BBFECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813FE4B23055393E00BBFECC /* Build configuration list for PBXNativeTarget "Spektrafilm MacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813FE4B33055393E00BBFECC /* Debug */,
+				813FE4B43055393E00BBFECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813FE4B53055393E00BBFECC /* Build configuration list for PBXNativeTarget "Spektrafilm MacOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813FE4B63055393E00BBFECC /* Debug */,
+				813FE4B73055393E00BBFECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813FE5B330553C8900BBFECC /* Build configuration list for PBXNativeTarget "SpektrafilmCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813FE5B430553C8900BBFECC /* Debug */,
+				813FE5B530553C8900BBFECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813FE5FD30553CC300BBFECC /* Build configuration list for PBXNativeTarget "SpektrafilmApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813FE5FE30553CC300BBFECC /* Debug */,
+				813FE5FF30553CC300BBFECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813FE60030553CC300BBFECC /* Build configuration list for PBXNativeTarget "SpektrafilmAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813FE60130553CC300BBFECC /* Debug */,
+				813FE60230553CC300BBFECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813FE60330553CC300BBFECC /* Build configuration list for PBXNativeTarget "SpektrafilmAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813FE60430553CC300BBFECC /* Debug */,
+				813FE60530553CC300BBFECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8147692B3058E0F4007FE70D /* Build configuration list for PBXNativeTarget "SpektrafilmPreviewGeometry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8147692C3058E0F4007FE70D /* Debug */,
+				8147692D3058E0F4007FE70D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 813FE4843055393D00BBFECC /* Project object */;
+}
